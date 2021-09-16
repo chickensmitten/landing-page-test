@@ -61,6 +61,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --bg-masthead: url("");
 }
 
 *,
@@ -11290,7 +11291,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: var(--bg-masthead) no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -11346,7 +11347,7 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url({{bg-masthead}}) no-repeat center center;
+  background: var(--bg-masthead) no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
